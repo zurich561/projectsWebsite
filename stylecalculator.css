@@ -1,0 +1,28 @@
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Stil für den Inhalt der Tabs */
+  .tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+
+  /* Zeige den aktiven Tab-Inhalt an */
+  .tab-content.active {
+    display: block;
+  }
