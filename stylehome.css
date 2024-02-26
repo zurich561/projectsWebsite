@@ -5,7 +5,7 @@
     font-family: "Inconsolata", monospace;
 }
 
-body {
+.body {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -19,6 +19,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .welcome-text {
@@ -26,7 +27,6 @@ body {
     font-size: 80px;
     font-weight: bold;
     background-color: #ff665e6a;
-    margin-top: 36vh;
     color: #ffffff;
     padding: 30px;
     border-radius: 25px;
@@ -319,33 +319,33 @@ input:checked + .itemBox .description {
 }
 
 .faq-container {
-margin-top: 119px;
-width: 600px;
-max-width: 90%;
-margin-left: 5%;
+    margin-top: 119px;
+    width: 600px;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .faq-item {
-margin-bottom: 10px;
-border-radius: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .faq-question {
-padding: 10px;
-background-color: #FF665E;
-border-radius: 5px;
-color: white;
-cursor: pointer;
+    padding: 10px;
+    background-color: #FF665E;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
 
 .faq-answer {
-display: none;
-padding: 10px;
-color: white;
+    display: none;
+    padding: 10px;
+    color: white;
 }
 
 .faq-answer.active {
-display: block;
+    display: block;
 }
 
 .bottom {
@@ -357,18 +357,53 @@ display: block;
 
 @media only screen and (max-width: 600px) {
     .welcome-text {
-        font-size: 8vw; 
-        margin-top: 5vh;
+        font-size: 12vw; 
+        justify-content: center;
         border-radius: 10px;
     }
 
     .welcomeGuideText {
         font-size: 6vw; 
-        margin-top: 80vh;
     }
 
     .opacity01 {
         height: 40px; /* Anpassung für kleine Bildschirme */
+    }
+
+    .projectsBox {
+        display: none;
+    }
+
+    .backgroundCV {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cvBoxLeft {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .cvBoxRight {
+        width: 100vw;
+        margin-top: 5%;
+    }
+
+    .summary {
+        margin-top: 5%;
+        width: 95%;
+    }
+
+    .boxCV {
+        margin: 0;
+    }
+
+    .PictureCV {
+        display: none;
+    }
+
+    .faq-container {
+        margin-top: 7%;
     }
 }
 
