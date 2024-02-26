@@ -357,14 +357,14 @@ display: block;
 
 @media only screen and (max-width: 600px) {
     .welcome-text {
-        font-size: 8vw; /* Responsive Schriftgröße für kleine Bildschirme */
+        font-size: 8vw; 
         margin-top: 5vh;
         border-radius: 10px;
     }
 
     .welcomeGuideText {
-        font-size: 6vw; /* Responsive Schriftgröße für kleine Bildschirme */
-        margin-top: 3vh;
+        font-size: 6vw; 
+        margin-top: 80vh;
     }
 
     .opacity01 {
